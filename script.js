@@ -20,7 +20,7 @@ function updateValueDisplay() {
 
 // Move to the settings page
 function goToSettings() {
-  window.location.href = "../settings/settings.html"; // Change this to your actual settings page URL
+  window.location.href = "/settings.html"; // Change this to your actual settings page URL
 }
 
 // Build a dynamic grid based on the provided rows and columns
