@@ -29,7 +29,7 @@ document.getElementById('apply-initial-pos').addEventListener('click', function 
 
 // Save IP address
 document.getElementById('back-to-control').addEventListener('click', function () {
-  window.location.href = '../home/index.html'; // Redirect to the main page
+  window.location.href = '/index.html'; // Redirect to the main page
 });
 
 // Save ESP32 IP address
