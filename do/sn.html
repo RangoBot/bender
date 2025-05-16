@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday Soundous</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('pic.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe Script', cursive;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #fff9c4;
+      margin: 40px 0 20px;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    }
+
+    .cake-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin-top: 68px;
+      margin-bottom: 30px;
+    }
+
+    .tier {
+      width: 240px;
+      height: 80px;
+      background: linear-gradient(to bottom, #5d4037, #3e2723); /* Chocolate */
+      border-radius: 12px;
+      margin-top: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      position: relative;
+    }
+
+    .tier.middle {
+      width: 180px;
+      height: 65px;
+      background: linear-gradient(to bottom, #c2185b, #880e4f); /* Velvet pink */
+    }
+
+    .tier.top {
+      width: 110px;
+      height: 50px;
+      background: linear-gradient(to bottom, #ffd700, #ffa000); /* Gold */
+    }
+
+    .frosting-drip {
+      position: absolute;
+      top: -18px;
+      left: 0;
+      width: 100%;
+      height: 28px;
+      background: #fff8dc;
+      border-radius: 20px 20px 0 0;
+      z-index: 1;
+    }
+
+    .candle {
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12px;
+      height: 40px;
+      background: repeating-linear-gradient(45deg, #d50000, #d50000 5px, #fff 5px, #fff 10px);
+      border-radius: 3px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    }
+
+    .flame {
+      position: absolute;
+      top: -78px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 16px;
+      height: 24px;
+      background: radial-gradient(circle at center, gold, orange);
+      border-radius: 50% 50% 0 0;
+      animation: flicker 0.4s infinite;
+    }
+
+    @keyframes flicker {
+      0%, 100% { transform: translateX(-50%) scale(1); }
+      50% { transform: translateX(-50%) scale(1.2); }
+    }
+
+    .message {
+      font-size: 1.4rem;
+      margin-bottom: 60px;
+      color: #fffde7;
+      padding: 0 20px;
+      text-align: center;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌸🌸🌸 Happy Birthday Soundous! 🌸🌸🌸</h1>
+
+  <div class="cake-container">
+    <div class="flame"></div>
+    <div class="candle"></div>
+
+    <div class="tier top">
+      <div class="frosting-drip"></div>
+    </div>
+
+    <div class="tier middle">
+      <div class="frosting-drip"></div>
+    </div>
+
+    <div class="tier">
+      <div class="frosting-drip"></div>
+    </div>
+  </div>
+
+  <div class="message">Wishing you a blooming year full of joy, sparkle, and sweet surprises 🌸🎂✨</div>
+
+</body>
+</html>
